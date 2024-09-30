@@ -62,7 +62,7 @@ class UpdateCompany(graphene.Mutation):
     def mutate(self, info, id, name, address):
         if not info.context.user.is_authenticated:
             raise GraphQLError("User is not authenticated.")
-        if not info.context.user.has_perm('my_app.change_company'):  # Adjust permission as needed
+        if not info.context.user.has_perm('my_app.change_company'): 
             raise GraphQLError("User does not have permission to update a company.")
 
 
@@ -81,22 +81,18 @@ class Query(UserQuery, MeQuery ,graphene.ObjectType):
     get_company_by_id = graphene.Field(CompanyType, id=graphene.Int(required=True))
 
     def resolve_companies(self, info, **kwargs):
-        # Check if user is authenticated
         if not info.context.user.is_authenticated:
             raise GraphQLError("User is not authenticated.")
         
-        # Check if user has permission to view companies
         if not info.context.user.has_perm('my_app.view_company'):
             raise GraphQLError("You do not have permission to view companies.")
         
         return Company.objects.all()
 
     def resolve_get_company_by_id(self, info, id):
-        # Check if user is authenticated
         if not info.context.user.is_authenticated:
             raise GraphQLError("User is not authenticated.")
 
-        # Check if user has permission to view the specific company
         if not info.context.user.has_perm('my_app.view_company'):
             raise GraphQLError("You do not have permission to view this company.")
         
@@ -120,7 +116,6 @@ class AuthMutation(graphene.ObjectType):
     verify_secondary_email = mutations.VerifySecondaryEmail.Field()
     swap_emails = mutations.SwapEmails.Field()
 
-    # django-graphql-jwt inheritances
     token_auth = mutations.ObtainJSONWebToken.Field()
     verify_token = mutations.VerifyToken.Field()
     refresh_token = mutations.RefreshToken.Field()
