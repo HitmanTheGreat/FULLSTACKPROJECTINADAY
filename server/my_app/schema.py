@@ -22,6 +22,8 @@ class CreateCompany(graphene.Mutation):
     def mutate(self, info, name, address):
         if not info.context.user.is_authenticated:
             raise GraphQLError("User is not authenticated.")
+        if not info.context.user.has_perm('my_app.add_company'): 
+            raise GraphQLError("User does not have permission to add a company.")
         
         company = Company(name=name, address=address)
         company.save()
@@ -37,6 +39,8 @@ class DeleteCompany(graphene.Mutation):
     def mutate(self, info, id):
         if not info.context.user.is_authenticated:
             raise GraphQLError("User is not authenticated.")
+        if not info.context.user.has_perm('my_app.delete_company'): 
+            raise GraphQLError("User does not have permission to delete a company.")
         
         try:
             company = Company.objects.get(id=id)
@@ -77,13 +81,29 @@ class Query(UserQuery, MeQuery ,graphene.ObjectType):
     get_company_by_id = graphene.Field(CompanyType, id=graphene.Int(required=True))
 
     def resolve_companies(self, info, **kwargs):
+        # Check if user is authenticated
+        if not info.context.user.is_authenticated:
+            raise GraphQLError("User is not authenticated.")
+        
+        # Check if user has permission to view companies
+        if not info.context.user.has_perm('my_app.view_company'):
+            raise GraphQLError("You do not have permission to view companies.")
+        
         return Company.objects.all()
 
     def resolve_get_company_by_id(self, info, id):
+        # Check if user is authenticated
+        if not info.context.user.is_authenticated:
+            raise GraphQLError("User is not authenticated.")
+
+        # Check if user has permission to view the specific company
+        if not info.context.user.has_perm('my_app.view_company'):
+            raise GraphQLError("You do not have permission to view this company.")
+        
         try:
             return Company.objects.get(id=id)
         except Company.DoesNotExist:
-            return None
+            raise GraphQLError("Company not found.")
 
 
 class AuthMutation(graphene.ObjectType):
