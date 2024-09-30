@@ -1,0 +1,537 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "graphene",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "graphene",
+        "description": "graphene",
+        "detail": "graphene",
+        "documentation": {}
+    },
+    {
+        "label": "DjangoObjectType",
+        "importPath": "graphene_django",
+        "description": "graphene_django",
+        "isExtraImport": true,
+        "detail": "graphene_django",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "importPath": "my_app.models",
+        "description": "my_app.models",
+        "isExtraImport": true,
+        "detail": "my_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "MeQuery",
+        "importPath": "graphql_auth.schema",
+        "description": "graphql_auth.schema",
+        "isExtraImport": true,
+        "detail": "graphql_auth.schema",
+        "documentation": {}
+    },
+    {
+        "label": "UserQuery",
+        "importPath": "graphql_auth.schema",
+        "description": "graphql_auth.schema",
+        "isExtraImport": true,
+        "detail": "graphql_auth.schema",
+        "documentation": {}
+    },
+    {
+        "label": "mutations",
+        "importPath": "graphql_auth",
+        "description": "graphql_auth",
+        "isExtraImport": true,
+        "detail": "graphql_auth",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "GraphQLView",
+        "importPath": "graphene_django.views",
+        "description": "graphene_django.views",
+        "isExtraImport": true,
+        "detail": "graphene_django.views",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "schema",
+        "importPath": "my_app.schema",
+        "description": "my_app.schema",
+        "isExtraImport": true,
+        "detail": "my_app.schema",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "server.my_app.migrations.0001_initial",
+        "description": "server.my_app.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Company',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "server.my_app.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "MyAppConfig",
+        "kind": 6,
+        "importPath": "server.my_app.apps",
+        "description": "server.my_app.apps",
+        "peekOfCode": "class MyAppConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'my_app'",
+        "detail": "server.my_app.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "kind": 6,
+        "importPath": "server.my_app.models",
+        "description": "server.my_app.models",
+        "peekOfCode": "class Company(models.Model):\n  name = models.CharField(max_length=100)\n  address = models.CharField(max_length=200)\n  def __str__(self):\n    return self.name",
+        "detail": "server.my_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyType",
+        "kind": 6,
+        "importPath": "server.my_app.schema",
+        "description": "server.my_app.schema",
+        "peekOfCode": "class CompanyType(DjangoObjectType):\n  class Meta:\n    model = Company\n    fields = (\"id\", \"name\", \"address\")\nclass CreateCompany(graphene.Mutation):\n    class Arguments:\n        name = graphene.String()\n        address = graphene.String()\n    ok = graphene.Boolean() \n    company = graphene.Field(CompanyType)",
+        "detail": "server.my_app.schema",
+        "documentation": {}
+    },
+    {
+        "label": "CreateCompany",
+        "kind": 6,
+        "importPath": "server.my_app.schema",
+        "description": "server.my_app.schema",
+        "peekOfCode": "class CreateCompany(graphene.Mutation):\n    class Arguments:\n        name = graphene.String()\n        address = graphene.String()\n    ok = graphene.Boolean() \n    company = graphene.Field(CompanyType)\n    def mutate(self, info, name, address):\n        company = Company(name=name, address=address)\n        company.save()\n        return CreateCompany(ok=True, company=company)",
+        "detail": "server.my_app.schema",
+        "documentation": {}
+    },
+    {
+        "label": "DeleteCompany",
+        "kind": 6,
+        "importPath": "server.my_app.schema",
+        "description": "server.my_app.schema",
+        "peekOfCode": "class DeleteCompany(graphene.Mutation):\n  class Arguments:\n    id = graphene.Int()\n  msg = graphene.String()\n  def mutate(self, info, id):\n    restaurant = Company.objects.get(id=id)\n    restaurant.delete()\n    return DeleteCompany(msg = \"Company deleted Successfully\")\nclass UpdateCompany(graphene.Mutation):\n  class Arguments:",
+        "detail": "server.my_app.schema",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateCompany",
+        "kind": 6,
+        "importPath": "server.my_app.schema",
+        "description": "server.my_app.schema",
+        "peekOfCode": "class UpdateCompany(graphene.Mutation):\n  class Arguments:\n    id = graphene.Int()\n    name = graphene.String()\n    address = graphene.String()\n  ok = graphene.Boolean()\n  company = graphene.Field(CompanyType)\n  def mutate(self, info, id, name, address):\n    company = Company.objects.get(id=id)\n    company.name = name",
+        "detail": "server.my_app.schema",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "kind": 6,
+        "importPath": "server.my_app.schema",
+        "description": "server.my_app.schema",
+        "peekOfCode": "class Query(UserQuery, MeQuery ,graphene.ObjectType):\n    companies = graphene.List(CompanyType)\n    get_company_by_id = graphene.Field(CompanyType, id=graphene.Int(required=True))\n    def resolve_companies(self, info, **kwargs):\n        return Company.objects.all()\n    def resolve_get_company_by_id(self, info, id):\n        try:\n            return Company.objects.get(id=id)\n        except Company.DoesNotExist:\n            return None",
+        "detail": "server.my_app.schema",
+        "documentation": {}
+    },
+    {
+        "label": "Mutation",
+        "kind": 6,
+        "importPath": "server.my_app.schema",
+        "description": "server.my_app.schema",
+        "peekOfCode": "class Mutation(graphene.ObjectType):\n    create_company = CreateCompany.Field()\n    delete_company = DeleteCompany.Field()\n    update_company = UpdateCompany.Field()\n    user_registration = mutations.Register.Field()\n    user_verification = mutations.VerifyAccount.Field()\n    user_authentication = mutations.ObtainJSONWebToken.Field()\nschema = graphene.Schema(query=Query, mutation=Mutation)",
+        "detail": "server.my_app.schema",
+        "documentation": {}
+    },
+    {
+        "label": "schema",
+        "kind": 5,
+        "importPath": "server.my_app.schema",
+        "description": "server.my_app.schema",
+        "peekOfCode": "schema = graphene.Schema(query=Query, mutation=Mutation)",
+        "detail": "server.my_app.schema",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "server.my_app.urls",
+        "description": "server.my_app.urls",
+        "peekOfCode": "urlpatterns = [\n  path(\"graphql\", csrf_exempt(GraphQLView.as_view(graphiql=True, schema=schema))),\n]",
+        "detail": "server.my_app.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "server.server.asgi",
+        "description": "server.server.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "server.server.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-tu$#6#vyx&-104c-c%t7636#*0wmw7&93jbov7pr8qjs0==3yu'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-tu$#6#vyx&-104c-c%t7636#*0wmw7&93jbov7pr8qjs0==3yu'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'my_app',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'my_app',\n    'graphene_django',\n    'graphql_jwt.refresh_token.apps.RefreshTokenConfig',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\n# Email settings",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\n# EMAIL_HOST = 'smtp.gmail.com'  \n# EMAIL_PORT = 587\n# EMAIL_USE_TLS = True\n# EMAIL_HOST_USER = 'your_email@gmail.com'\n# EMAIL_HOST_PASSWORD = 'your_email_password' \nGRAPHENE = {\n    \"SCHEMA\": \"blog.schema.schema\",\n    \"MIDDLEWARE\": [        \n        'graphql_jwt.middleware.JSONWebTokenMiddleware',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "GRAPHENE",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "GRAPHENE = {\n    \"SCHEMA\": \"blog.schema.schema\",\n    \"MIDDLEWARE\": [        \n        'graphql_jwt.middleware.JSONWebTokenMiddleware',\n        ],\n    }\nAUTHENTICATION_BACKENDS = [    \n                           'graphql_auth.backends.GraphQLAuthBackend',\n                           'django.contrib.auth.backends.ModelBackend',\n                           ]",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTHENTICATION_BACKENDS",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "AUTHENTICATION_BACKENDS = [    \n                           'graphql_auth.backends.GraphQLAuthBackend',\n                           'django.contrib.auth.backends.ModelBackend',\n                           ]\n# settings.py\n# GRAPHQL_AUTH = {\n#     'LOGIN_ALLOWED_AFTER_ACTIVATION': False,\n#     'SEND_ACTIVATION_EMAIL': True,\n#     'ACTIVATION_EMAIL': {\n#         'subject_template': 'Activate your account on {{ site_name }}',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "GRAPHQL_JWT",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "GRAPHQL_JWT = {    \n               'JWT_ALLOW_ANY_CLASSES':[        \n                   \"graphql_auth.mutations.Register\",\n                   \"graphql_auth.mutations.VerifyAccount\",\n                   \"graphql_auth.mutations.ObtainJSONWebToken\",\n                   ],\n               \"JWT_VERIFY_EXPIRATION\":True,\n               \"JWT_LONG_RUNNING_REFRESH_TOKEN\":True,\n               }\nROOT_URLCONF = 'server.urls'",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "ROOT_URLCONF = 'server.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'server.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "server.server.urls",
+        "description": "server.server.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('my_app.urls'))\n]",
+        "detail": "server.server.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "server.server.wsgi",
+        "description": "server.server.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "server.server.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "server.manage",
+        "description": "server.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'server.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "server.manage",
+        "documentation": {}
+    }
+]

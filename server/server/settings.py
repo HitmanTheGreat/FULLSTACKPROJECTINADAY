@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -27,7 +26,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,7 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'my_app',
-    'graphene_django'
+    'graphene_django',
+    'graphql_jwt.refresh_token.apps.RefreshTokenConfig',
+    'graphql_auth',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +51,48 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'  
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'your_email@gmail.com'
+# EMAIL_HOST_PASSWORD = 'your_email_password' 
+
+GRAPHENE = {
+    "SCHEMA": "blog.schema.schema",
+    "MIDDLEWARE": [        
+        'graphql_jwt.middleware.JSONWebTokenMiddleware',
+        ],
+    }
+
+AUTHENTICATION_BACKENDS = [    
+                           'graphql_auth.backends.GraphQLAuthBackend',
+                           'django.contrib.auth.backends.ModelBackend',
+                           ]
+
+# settings.py
+
+# GRAPHQL_AUTH = {
+#     'LOGIN_ALLOWED_AFTER_ACTIVATION': False,
+#     'SEND_ACTIVATION_EMAIL': True,
+#     'ACTIVATION_EMAIL': {
+#         'subject_template': 'Activate your account on {{ site_name }}',
+#         'body_template': 'Hello {{ user.username }}!\n\nPlease activate your account on the link:\n\n{{ activation_url }}',
+#     },
+# }
+
+
+GRAPHQL_JWT = {    
+               'JWT_ALLOW_ANY_CLASSES':[        
+                   "graphql_auth.mutations.Register",
+                   "graphql_auth.mutations.VerifyAccount",
+                   "graphql_auth.mutations.ObtainJSONWebToken",
+                   ],
+               "JWT_VERIFY_EXPIRATION":True,
+               "JWT_LONG_RUNNING_REFRESH_TOKEN":True,
+               }
 
 ROOT_URLCONF = 'server.urls'
 
@@ -71,7 +114,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'server.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
@@ -81,7 +123,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -101,7 +142,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -112,7 +152,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
