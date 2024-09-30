@@ -52,13 +52,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# Email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'  
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'your_email@gmail.com'
-# EMAIL_HOST_PASSWORD = 'your_email_password' 
 
 GRAPHENE = {
     "SCHEMA": "blog.schema.schema",
@@ -72,7 +65,14 @@ AUTHENTICATION_BACKENDS = [
                            'django.contrib.auth.backends.ModelBackend',
                            ]
 
-# settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# Email settings
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'  # For Gmail
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'your_email@gmail.com'  # Your email address
+# EMAIL_HOST_PASSWORD = 'your_email_password'  # Your email password
 
 # GRAPHQL_AUTH = {
 #     'LOGIN_ALLOWED_AFTER_ACTIVATION': False,
@@ -82,6 +82,7 @@ AUTHENTICATION_BACKENDS = [
 #         'body_template': 'Hello {{ user.username }}!\n\nPlease activate your account on the link:\n\n{{ activation_url }}',
 #     },
 # }
+
 
 
 GRAPHQL_JWT = {    
