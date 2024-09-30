@@ -58,7 +58,7 @@ class UpdateCompany(graphene.Mutation):
     def mutate(self, info, id, name, address):
         if not info.context.user.is_authenticated:
             raise GraphQLError("User is not authenticated.")
-        if not info.context.user.has_perm('your_app.change_company'):  # Adjust permission as needed
+        if not info.context.user.has_perm('my_app.change_company'):  # Adjust permission as needed
             raise GraphQLError("User does not have permission to update a company.")
 
 
